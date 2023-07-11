@@ -12,26 +12,26 @@ a {
 /* TopBar */
 
 .top_bar {
-  border-bottom: 2px solid yellow;
-  border-top: 1px solid yellow;
+  border-bottom: 0.15rem solid #ffff00;
+  border-top: 0.15rem solid #ffff00;
 }
 
 .top_bar, .topbar_item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: yellow;
+  color: #ffff00;
   font-weight: 500;
 }
 
 .topbar_item .icon {
-  margin: 8px;
+  margin: 0.5rem;
 }
 
 .separator {
-  width: 2px;
-  height: 40px;
-  border: 1px solid yellow;
+  width: 0.1rem;
+  height: 2.5rem;
+  border: 0.1rem solid #ffff00;
 }
 
 @media (max-width: 992px) {
@@ -43,7 +43,7 @@ a {
 /* Navbar */
 
 .navbar {
-  padding-top: 45px;
+  padding-top: 3rem;
 }
 
 .logo:hover {
@@ -51,33 +51,33 @@ a {
   transition: transform 0.2s ease;
 }
 
-.navbar-toggler {
-  color: #ffff00;
-  border: none;
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 25 25'%3e%3cpath stroke='rgba%28255, 255, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .nav-link {
-  color: yellow;
-  font-size: 20px;
+  color: #ffff00;
+  font-size: 1.3rem;
   font-weight: 700;
-  margin-bottom: 1px;
-  margin: 0 5px;
+  margin-bottom:0.1rem;
+  margin: 0 0.4rem;
 }
 
 .nav-link:hover {
-  color: yellow;
+  color: #ffff00;
   transform: scale(1.1);
   transition: transform 0.2s ease-in;
-  border-bottom: 2px solid yellow;
+  border-bottom: 0.15rem solid #ffff00;
 }
 
 .button {
-  border: 2px solid yellow;
-  background-color: yellow;
+  border: 0.2rem solid #ffff00;
+  background-color: #ffff00;
   color: #000;
+  font-size: 1.1rem;
   font-weight: bold;
-  border-radius: 7px;
-  padding: 5px 12px;
+  border-radius: 0.5rem;
+  padding: 0.3rem 0.8rem;
 }
 
 .button:hover {
@@ -89,26 +89,22 @@ a {
   .logo {
     transform: rotate(-5deg);
   }
-  .logo img {
-    width: 100px;
-    height: 60px;
-  }
   .logo:hover {
     transform: rotate(-5deg) scale(1);
     transition: transform 0.2s ease;
   }
   .navbar {
-    padding: 0 0 5px 0 !important;
+    padding: 0 0 0.5rem 0 !important;
     background-color: #000;
   }
   .nav-link {
-    font-size: 13px;
+    font-size: 1rem;
     font-weight: 500;
     margin: 0;
-    padding-left: 17px;
+    padding-left: 1.05rem;
   }
   .nav-link:hover {
-    color: yellow;
+    color: #ffff00;
     transform: scale(1);
     transition: transform 0.2s ease-in;
     border-bottom: 0;
@@ -117,10 +113,17 @@ a {
     background-color: #000;
   }
   .buttons {
-    padding-bottom: 15px;
+    padding-bottom: 1rem;
+  }
+  .button {
+    border: 0.1rem solid #ffff00;
+    background-color: #ffff00;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.15rem 0.5rem;
   }
   .button:hover {
-    background-color: yellow;
+    background-color: #ffff00;
     color: #000;
   }
 }
@@ -129,7 +132,7 @@ a {
 
 .carousel-item {
   height: 100vh;
-  min-height: 300px;
+  min-height: 25rem;
   background: no-repeat scroll center scroll;
 }
 
