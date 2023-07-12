@@ -51,6 +51,10 @@ a {
   transition: transform 0.2s ease;
 }
 
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 25 25'%3e%3cpath stroke='rgba%28255, 255, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
@@ -102,12 +106,12 @@ a {
     font-weight: 500;
     margin: 0;
     padding-left: 1.05rem;
+    border-bottom: 0.1rem solid #ffff00;
   }
   .nav-link:hover {
-    color: #ffff00;
     transform: scale(1);
     transition: transform 0.2s ease-in;
-    border-bottom: 0;
+    border-bottom: 0.1rem solid #ffff00;
   }
   .collapse {
     background-color: #000;
@@ -121,6 +125,7 @@ a {
     font-size: 1rem;
     font-weight: 700;
     padding: 0.15rem 0.5rem;
+    margin-top: 0.5rem;
   }
   .button:hover {
     background-color: #ffff00;
@@ -132,8 +137,6 @@ a {
 
 .carousel-item {
   height: 100vh;
-  min-height: 25rem;
-  background: no-repeat scroll center scroll;
 }
 
 .carousel-item::before {
