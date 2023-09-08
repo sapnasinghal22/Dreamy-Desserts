@@ -142,22 +142,6 @@ a {
 
 /* Hero */
 
-.carousel-item {
-  height: 100vh;
-}
-
-.carousel-item::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #000;
-  opacity: 0.4;
-}
-
 .carousel-caption {
   bottom: 38%;
 }
@@ -175,6 +159,12 @@ a {
 .slider-btn .btn-2 {
   color: #000;
   background: #ffff00;
+}
+
+@media(min-width : 993px) {  
+  .carousel-item {
+    height: 100vh;
+  }
 }
 
 @media (max-width : 993px) and (min-width : 571px) {
@@ -219,6 +209,49 @@ a {
   }
 }
 
+/* About Us */
 
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
 
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
+.about-img {
+  flex: 1;
+  margin: 0 50px;
+  overflow: hidden;
+}
+
+.about-img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about-content {
+  flex: 1;
+  text-align: justify;
+}
+
+@media (max-width : 993px) {
+  .about {
+    flex-direction: column-reverse;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .about-img {
+    margin: 0 30px;
+  }
+  .about-content h5, .about-content h3 {
+    text-align: center;
+    margin-top: 15px;
+  }
+}
