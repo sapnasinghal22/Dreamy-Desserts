@@ -211,6 +211,10 @@ a {
 
 /* About Us */
 
+.about_us {
+  background-image: linear-gradient(to bottom right, rgb(250, 38, 73), orange , rgb(245, 78, 106), #ffff00);
+}
+
 .container {
   width: 90%;
   margin: 0 auto;
@@ -226,7 +230,7 @@ a {
 
 .about-img {
   flex: 1;
-  margin: 0 50px;
+  margin-left: 50px;
   overflow: hidden;
 }
 
@@ -239,6 +243,11 @@ a {
 .about-content {
   flex: 1;
   text-align: justify;
+  font-weight: bold;
+}
+
+strong {
+  color: #ffff00;
 }
 
 @media (max-width : 993px) {
