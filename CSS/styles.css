@@ -11,7 +11,7 @@ a {
 
 html {
   max-width: 100vw;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /* TopBar */
@@ -274,6 +274,12 @@ strong {
 
 /* Gallery */
 
+.heading {
+  
+  background: linear-gradient(to right, #ffff00, #f5f584);
+  margin: 0;
+  padding-top: 20px;
+}
 .gallery-container {
   min-height: 100vh;
   display: flex;
